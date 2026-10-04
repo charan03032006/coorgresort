@@ -1,4 +1,4 @@
-import { supabase } from '@/lib/supabase';
+import { getSupabase } from '@/lib/supabase';
 import type { Destination, Hotel, Offer, Experience, Review, TravelGuide, Feature, Amenity } from '@/types';
 
 function assertNoError(error: { message: string } | null, resource: string) {
@@ -21,37 +21,37 @@ const mapTravelGuide = (r: any): TravelGuide => ({ id: r.id, title: r.title, des
 const mapAmenity = (r: any): Amenity => ({ id: r.id, name: r.name, icon: r.icon });
 
 export async function getDestinations() {
-  const { data, error } = await supabase.from('destinations').select('*').order('name');
+  const { data, error } = await getSupabase().from('destinations').select('*').order('name');
   assertNoError(error, 'destinations'); return (data ?? []).map(mapDestination);
 }
 export async function getHotels(options?: { featured?: boolean; destinationId?: string }) {
-  let query = supabase.from('hotels').select('*').eq('is_active', true).order('name');
+  let query = getSupabase().from('hotels').select('*').eq('is_active', true).order('name');
   if (options?.featured !== undefined) query = query.eq('featured', options.featured);
   if (options?.destinationId) query = query.eq('destination_id', options.destinationId);
   const { data, error } = await query; assertNoError(error, 'hotels'); return (data ?? []).map(mapHotel);
 }
 export async function getOffers() {
-  const { data, error } = await supabase.from('offers').select('*').eq('is_active', true).order('sort_order');
+  const { data, error } = await getSupabase().from('offers').select('*').eq('is_active', true).order('sort_order');
   assertNoError(error, 'offers'); return (data ?? []).map(mapOffer);
 }
 export async function getExperiences() {
-  const { data, error } = await supabase.from('experiences').select('*').eq('is_active', true).order('sort_order');
+  const { data, error } = await getSupabase().from('experiences').select('*').eq('is_active', true).order('sort_order');
   assertNoError(error, 'experiences'); return (data ?? []).map(mapExperience);
 }
 export async function getFeatures() {
-  const { data, error } = await supabase.from('features').select('*').eq('is_active', true).order('sort_order');
+  const { data, error } = await getSupabase().from('features').select('*').eq('is_active', true).order('sort_order');
   assertNoError(error, 'features'); return (data ?? []).map(mapFeature);
 }
 export async function getAmenities() {
-  const { data, error } = await supabase.from('amenities').select('*').eq('is_active', true).order('sort_order');
+  const { data, error } = await getSupabase().from('amenities').select('*').eq('is_active', true).order('sort_order');
   assertNoError(error, 'amenities'); return (data ?? []).map(mapAmenity);
 }
 export async function getReviews() {
-  const { data, error } = await supabase.from('reviews').select('*').eq('is_published', true).order('created_at', { ascending: false });
+  const { data, error } = await getSupabase().from('reviews').select('*').eq('is_published', true).order('created_at', { ascending: false });
   assertNoError(error, 'reviews'); return (data ?? []).map(mapReview);
 }
 export async function getTravelGuides() {
-  const { data, error } = await supabase.from('travel_guides').select('*').eq('is_published', true).order('sort_order');
+  const { data, error } = await getSupabase().from('travel_guides').select('*').eq('is_published', true).order('sort_order');
   assertNoError(error, 'travel guides'); return (data ?? []).map(mapTravelGuide);
 }
 export async function getHomeContent() {
