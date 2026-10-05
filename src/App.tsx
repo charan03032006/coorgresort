@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Home from '@/pages/Home';
 import PlaceholderPage from '@/pages/PlaceholderPage';
+import Hotels from '@/pages/Hotels';
 
 export default function App() {
   return (
@@ -12,15 +13,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route
-              path="/hotels"
-              element={
-                <PlaceholderPage
-                  title="All Hotels"
-                  description="Browse our complete collection of Coorg Manju hotels across all destinations."
-                />
-              }
-            />
+            <Route path="/hotels" element={<Hotels />} />
             <Route
               path="/hotels/:hotelId"
               element={
@@ -57,15 +50,7 @@ export default function App() {
                 />
               }
             />
-            <Route
-              path="/destinations/:destinationId"
-              element={
-                <PlaceholderPage
-                  title="Destination"
-                  description="Browse hotels and attractions in this Coorg destination."
-                />
-              }
-            />
+            <Route path="/destinations/:destinationId" element={<Hotels />} />
             <Route
               path="/booking"
               element={
