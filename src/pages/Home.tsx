@@ -13,6 +13,7 @@ import AmenityList from '@/components/AmenityList';
 import ReviewCarousel from '@/components/ReviewCarousel';
 import TravelGuideCard from '@/components/TravelGuideCard';
 import FinalCTA from '@/components/FinalCTA';
+import CompetitiveSections from '@/components/CompetitiveSections';
 import { RevealSection } from '@/hooks/useReveal';
 import { useHomeContent } from '@/hooks/useHomeContent';
 
@@ -37,6 +38,7 @@ export default function Home() {
       <SEO />
       <StructuredData />
       <Hero />
+      <CompetitiveSections />
 
       <section className="border-b border-cream-200 bg-white">
         <div className="section-container grid grid-cols-1 divide-y divide-cream-200 py-2 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:py-3">
@@ -60,10 +62,10 @@ export default function Home() {
           <RevealSection className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">One group. Three experiences.</p>
-              <h2 className="max-w-3xl font-serif text-3xl font-bold leading-tight text-forest-900 sm:text-5xl">Everything you need for a memorable Coorg stay.</h2>
+              <h2 className="max-w-3xl font-serif text-3xl font-bold leading-tight text-forest-900 sm:text-5xl">Everything you need for a memorable Mysuru & Coorg journey.</h2>
             </div>
             <p className="max-w-xl text-base leading-relaxed text-forest-600 lg:justify-self-end">
-              From a comfortable room to a good meal and reliable transport, Coorg Manju brings hospitality, dining and travel together under one brand.
+              From a comfortable room to a good meal and dependable transport, Coorg Manju brings stays, dining, local experiences and travel support together under one local brand.
             </p>
           </RevealSection>
         </div>
@@ -109,7 +111,7 @@ export default function Home() {
           <RevealSection className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-gold-600 text-sm font-semibold tracking-widest uppercase mb-3">Limited Time</p>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest-900 mb-4 text-balance">Exclusive Offers</h2>
-            <p className="text-forest-600 text-lg">Save more on your Coorg stay with our specially curated deals and packages.</p>
+            <p className="text-forest-600 text-lg">Discover stay deals and trip packages across Mysuru and Coorg.</p>
           </RevealSection>
           <RevealSection className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {offers.map((offer, idx) => <div key={offer.id} className="reveal" style={{ transitionDelay: `${idx * 70}ms` }}><OfferCard offer={offer} /></div>)}
@@ -140,8 +142,8 @@ export default function Home() {
         <div className="section-container">
           <RevealSection className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-gold-600 text-sm font-semibold tracking-widest uppercase mb-3">Travel Resources</p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest-900 mb-4 text-balance">Plan Your Coorg Trip</h2>
-            <p className="text-forest-600 text-lg">Expert guides and tips to help you make the most of your Coorg visit.</p>
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest-900 mb-4 text-balance">Plan Your Mysuru & Coorg Trip</h2>
+            <p className="text-forest-600 text-lg">Plan a smarter Mysuru–Coorg trip with guides covering stays, attractions, food and local travel.</p>
           </RevealSection>
           <RevealSection className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {travelGuides.map((guide, idx) => <div key={guide.id} className="reveal" style={{ transitionDelay: `${idx * 60}ms` }}><TravelGuideCard guide={guide} /></div>)}
