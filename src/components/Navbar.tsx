@@ -4,6 +4,7 @@ import { Menu, X, Search, User, Calendar, ChevronDown, Utensils, Car } from 'luc
 
 const navLinks = [
   { label: 'Hotels', href: '/hotels' },
+  { label: 'Mysuru & Coorg', href: '/destinations' },
   { label: 'Offers', href: '/offers' },
   { label: 'Experiences', href: '/experiences' },
   { label: 'About Us', href: '/about' },
