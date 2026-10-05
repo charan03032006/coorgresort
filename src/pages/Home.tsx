@@ -73,8 +73,8 @@ export default function Home() {
         <div className="section-container">
           <RevealSection className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-gold-600 text-sm font-semibold tracking-widest uppercase mb-3">Destinations</p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest-900 mb-4 text-balance">Where will you stay in Coorg?</h2>
-            <p className="text-forest-600 text-lg">From misty hilltops to riverside retreats — find your perfect Coorg base.</p>
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest-900 mb-4 text-balance">Where will your Mysuru & Coorg journey begin?</h2>
+            <p className="text-forest-600 text-lg">From royal Mysuru heritage to misty Coorg hills, discover stays and experiences across the complete travel corridor.</p>
           </RevealSection>
           <RevealSection className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
             {destinations.map((d, idx) => (
@@ -124,8 +124,8 @@ export default function Home() {
         <div className="relative section-container">
           <RevealSection className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-gold-400 text-sm font-semibold tracking-widest uppercase mb-3">Coorg Experiences</p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 text-balance">Experience the Magic of Coorg</h2>
-            <p className="text-white/70 text-lg">Waterfalls, wildlife, coffee estates, and misty peaks — Coorg has something for every traveler.</p>
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 text-balance">Experience Mysuru & Coorg</h2>
+            <p className="text-white/70 text-lg">From palaces and gardens in Mysuru to waterfalls, wildlife and coffee estates in Coorg, there is something for every traveller.</p>
           </RevealSection>
           <RevealSection className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
             {experiences.map((exp, idx) => <div key={exp.id} className={`reveal ${idx === 0 ? 'col-span-2 sm:col-span-1' : ''}`} style={{ transitionDelay: `${idx * 50}ms` }}><ExperienceCard experience={exp} /></div>)}
