@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Utensils, BedDouble, Car, MapPin } from 'lucide-react';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
 import Hero from '@/components/Hero';
@@ -37,6 +37,37 @@ export default function Home() {
       <SEO />
       <StructuredData />
       <Hero />
+
+      <section className="border-b border-cream-200 bg-white">
+        <div className="section-container grid grid-cols-1 divide-y divide-cream-200 py-2 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:py-3">
+          <div className="flex items-center justify-center gap-3 px-4 py-4 sm:py-3">
+            <Utensils className="text-gold-600" size={22} />
+            <div><p className="font-semibold text-forest-900">Food</p><p className="text-xs text-forest-500">Mysuru Dine Hotel & Restaurant</p></div>
+          </div>
+          <div className="flex items-center justify-center gap-3 px-4 py-4 sm:py-3">
+            <BedDouble className="text-gold-600" size={22} />
+            <div><p className="font-semibold text-forest-900">Rooms</p><p className="text-xs text-forest-500">Comfortable stays across Coorg</p></div>
+          </div>
+          <div className="flex items-center justify-center gap-3 px-4 py-4 sm:py-3">
+            <Car className="text-gold-600" size={22} />
+            <div><p className="font-semibold text-forest-900">Vehicle</p><p className="text-xs text-forest-500">Local, sightseeing & transfers</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cream-50 py-16 sm:py-20">
+        <div className="section-container">
+          <RevealSection className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">One group. Three experiences.</p>
+              <h2 className="max-w-3xl font-serif text-3xl font-bold leading-tight text-forest-900 sm:text-5xl">Everything you need for a memorable Coorg stay.</h2>
+            </div>
+            <p className="max-w-xl text-base leading-relaxed text-forest-600 lg:justify-self-end">
+              From a comfortable room to a good meal and reliable transport, Coorg Manju brings hospitality, dining and travel together under one brand.
+            </p>
+          </RevealSection>
+        </div>
+      </section>
 
       <section className="py-20 sm:py-28 bg-white">
         <div className="section-container">
