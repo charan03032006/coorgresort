@@ -8,7 +8,6 @@ import {
   Coffee,
   ConciergeBell,
   Heart,
-  Map,
   MapPin,
   MessageCircle,
   ShieldCheck,
