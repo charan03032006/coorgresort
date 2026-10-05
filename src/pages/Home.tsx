@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Utensils, BedDouble, Car, MapPin } from 'lucide-react';
+import { ArrowRight, Utensils, BedDouble, Car } from 'lucide-react';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
 import Hero from '@/components/Hero';
