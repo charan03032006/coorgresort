@@ -4,7 +4,6 @@ import {
   Facebook,
   Youtube,
   Phone,
-  Mail,
   MapPin,
   ChevronRight,
 } from 'lucide-react';
@@ -70,24 +69,16 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
-              Premium hospitality in the heart of Coorg. Comfortable stays, beautiful locations, and unforgettable experiences since 2012.
+              Local hospitality across the Mysuru–Coorg corridor, bringing stays, dining, experiences and travel support together.
             </p>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-2.5">
                 <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" />
-                <span>Madikeri, Coorg District, Karnataka 571201, India</span>
+                <span>Mysuru & Coorg, Karnataka, India</span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Phone size={16} className="text-gold-400 shrink-0" />
-                <a href="tel:+918200000000" className="hover:text-white transition-colors">
-                  +91 82000 00000
-                </a>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Mail size={16} className="text-gold-400 shrink-0" />
-                <a href="mailto:stay@coorgmanjuhotels.com" className="hover:text-white transition-colors">
-                  stay@coorgmanjuhotels.com
-                </a>
+              <div className="flex items-start gap-2.5">
+                <Phone size={16} className="text-gold-400 mt-0.5 shrink-0" />
+                <span>Booking and enquiry support available through the website.</span>
               </div>
             </div>
           </div>
