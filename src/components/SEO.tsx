@@ -7,8 +7,8 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = 'Coorg Manju Group of Hotels — Premium Stays in Coorg, Karnataka',
-  description = 'Stay, dine and travel with Coorg Manju Group of Hotels. Comfortable rooms, Mysuru Dine Hotel & Restaurant, and vehicle services across Coorg.',
+  title = 'Coorg Manju Group of Hotels — Stays in Mysuru & Coorg',
+  description = 'Stay, dine and travel with Coorg Manju Group of Hotels across Mysuru and Coorg. Enjoy comfortable rooms, Mysuru Dine Hotel & Restaurant, local experiences and dependable vehicle services.',
   image = 'https://images.pexels.com/photos/33046721/pexels-photo-33046721.png?auto=compress&cs=tinysrgb&h=650&w=940',
 }: SEOProps) {
   useEffect(() => {
