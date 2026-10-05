@@ -8,7 +8,7 @@ interface SEOProps {
 
 export default function SEO({
   title = 'Coorg Manju Group of Hotels — Premium Stays in Coorg, Karnataka',
-  description = 'Book premium hotels in Coorg with Coorg Manju Group of Hotels. Comfortable stays in Madikeri, Kushalnagar, Virajpet & Somwarpet.',
+  description = 'Stay, dine and travel with Coorg Manju Group of Hotels. Comfortable rooms, Mysuru Dine Hotel & Restaurant, and vehicle services across Coorg.',
   image = 'https://images.pexels.com/photos/33046721/pexels-photo-33046721.png?auto=compress&cs=tinysrgb&h=650&w=940',
 }: SEOProps) {
   useEffect(() => {
