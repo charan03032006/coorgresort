@@ -1,4 +1,4 @@
-import { Utensils, BedDouble, Car, Sparkles } from 'lucide-react';
+import { Utensils, BedDouble, Car, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
 import HotelSearch from './HotelSearch';
 
 const servicePillars = [
@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-gold-300/40 bg-forest-950/50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-300 backdrop-blur-md animate-fade-in">
             <Sparkles size={14} />
-            Coorg • Karnataka • India
+            Mysuru ↔ Coorg • Karnataka
           </div>
 
           <h1 className="mt-5 max-w-4xl font-serif text-5xl font-bold leading-[0.98] tracking-tight text-white text-shadow-lg sm:text-6xl lg:text-8xl animate-fade-up">
@@ -35,14 +35,14 @@ export default function Hero() {
           </h1>
 
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/85 sm:text-xl animate-fade-up" style={{ animationDelay: '0.12s' }}>
-            Stay, dine and travel with one trusted local hospitality group. Discover comfortable rooms, authentic food and dependable vehicle services across Coorg.
+            Stay, dine and explore with a local hospitality group built around the Mysuru–Coorg journey. Find comfortable stays, local food, experiences and vehicle support in one place.
           </p>
 
           <div className="mt-6 inline-flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-md animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-400 text-forest-950 font-serif text-lg font-bold">M</div>
             <div>
               <p className="font-serif text-lg font-bold text-white">Mysuru Dine</p>
-              <p className="text-xs font-medium uppercase tracking-[0.18em] text-white/65">Hotel & Restaurant</p>
+              <p className="text-xs font-medium uppercase tracking-[0.18em] text-white/65">Hotel & Restaurant • Mysuru</p>
             </div>
           </div>
         </div>
@@ -62,6 +62,11 @@ export default function Hero() {
 
           <div className="mt-4 max-w-5xl">
             <HotelSearch />
+            <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-white/75">
+              <span className="inline-flex items-center gap-1.5"><ShieldCheck size={14} className="text-gold-300" /> Local booking support</span>
+              <span className="inline-flex items-center gap-1.5"><ArrowRight size={14} className="text-gold-300" /> Mysuru to Coorg stays</span>
+              <span className="inline-flex items-center gap-1.5"><Car size={14} className="text-gold-300" /> Vehicle & sightseeing support</span>
+            </div>
           </div>
         </div>
       </div>
