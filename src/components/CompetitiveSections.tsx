@@ -16,7 +16,7 @@ import {
   Utensils,
 } from 'lucide-react';
 
-const collections = [
+const quickTrust = [\n  { icon: CircleCheck, title: 'Direct local support', text: 'Talk to the team' },\n  { icon: BedDouble, title: 'Rooms & stays', text: 'Mysuru + Coorg' },\n  { icon: Utensils, title: 'Food & dining', text: 'Mysuru Dine' },\n  { icon: Car, title: 'Travel support', text: 'Transfers & trips' },\n];\n\nconst collections = [
   { title: 'Mysuru City Stays', text: 'Stay close to palaces, temples, gardens, food and city attractions.', href: '/destinations/mysuru', icon: MapPin },
   { title: 'Coorg Escapes', text: 'Comfortable bases for coffee estates, waterfalls, wildlife and hill experiences.', href: '/destinations/madikeri', icon: Coffee },
   { title: 'Family Getaways', text: 'Easy stays and sightseeing support for families travelling together.', href: '/experiences', icon: Heart },
